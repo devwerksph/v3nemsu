@@ -88,8 +88,64 @@
              <center>
               <!-- <a href="#" class=" btn-info " style="padding:5px ">Go Enroll</a> -->
             <!--   <a href="#" class=" btn-warning " style="padding:5px "><span class="bi bi-pencil-fill"></span></a> -->
-                <a href="add-student-grades.php?id=<?php echo $row['student_id']; ?>" class=" btn-info "  style="padding:5px "> Grades <span class="bi bi-plus"></span></a>
+            <!-- removed add-student-grades.php?id=<?php //echo $row['student_id']; ?> -->
+                <a data-toggle="modal" data-target="#addGrades" href="" class=" btn-info "  style="padding:5px "> Grades <span class="bi bi-plus"></span></a>
               </center>
+              <!-- Add Grades Modal -->
+            <div class="modal fade" id="addGrades" tabindex="-1" role="dialog" aria-labelledby="addGradesLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="addGradesLabel">Add Student Grades</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label>Unit </label> 
+                              <input id="unit" required="required" class="form-control user_change" data-name="data-firstname" type="text" name="unit" placeholder="Unit" onchange="myFunction()"> 
+                          <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+                          
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label>Prelim </label> 
+                              <input id="prelim" class="form-control " data-name="data-firstname" type="text" name="prelim" placeholder="Prelim" onchange="myFunction()"> 
+                          </div>
+                      </div>
+                    
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label>Midterm </label> 
+                              <input id="midterm" required="required" class="form-control" type="text" name="midterm" placeholder="Midterm" onchange="myFunction()"> 
+                          </div>
+                      </div>
+                      
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label>Finals </label> 
+                              <input id="finals" class="form-control" type="text" name="finals" placeholder="Finals" onchange="myFunction()"> 
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Semester </label> 
+                            <input id="semester" class="form-control" type="text" name="semester" placeholder="Semester" onchange="myFunction()"> 
+                        </div>
+                      </div><br><br>
+                      
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div><!--End Modal-->
             </td>  
           </tr>  
          

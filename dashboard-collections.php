@@ -12,9 +12,99 @@
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <br>
-          <span>Accounting <i class="bi bi-arrow-right"></i> List of Collections</span>  <a class="default-btn pull-right " href=""> Create Collect</a>
+          <span>Accounting <i class="bi bi-arrow-right"></i> List of Collections</span>  <a data-toggle="modal" data-target="#createTransaction" class="default-btn pull-right text-strong" href="">+ Create Transaction</a>
+          <!-- Modal -->
+<div class="modal fade" id="createTransaction" tabindex="-1" role="dialog" aria-labelledby="createTransactionLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="createTransactionLabel">Create Transaction</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div class="row">
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>First Name </label> 
+                  <input id="firstname" required="required" class="form-control user_change" data-name="data-firstname" type="text" name="firstname" placeholder="First Name" onchange="myFunction()"> 
+              <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+              
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>Middle Name </label> 
+                  <input id="middlename" class="form-control " data-name="data-firstname" type="text" name="middlename" placeholder="Middle Name" onchange="myFunction()"> 
+              </div>
+          </div>
+        
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>Last Name </label> 
+                  <input id="lastname" required="required" class="form-control" type="text" name="lastname" placeholder="Last Name" onchange="myFunction()"> 
+              </div>
+          </div>
+          
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>Suffix </label> 
+                  <input id="suffix" class="form-control" type="text" name="suffix" placeholder="Suffix" onchange="myFunction()"> 
+              </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-group">
+                <label>Course </label> 
+                <input id="YourCourse" class="form-control" type="text" name="course" placeholder="Course" onchange="myFunction()"> 
+            </div>
+          </div><br><br>
+          <div class="col-md-4">
+            <div class="form-group">
+                <label>Age </label> 
+                <input id="YourAge" class="form-control" type="number" name="age" placeholder="Age" onchange="myFunction()"> 
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+                <label>Date of Birth </label> 
+                <input id="dateofbirth" class="form-control" type="date" name="dob" placeholder="Date of Birth" onchange="myFunction()">
+            </div>
+         </div>
+        <div class="col-md-4">
+          <div class="form-group">
+              <label>Place of Birth </label> 
+              <input id="dateofplace" class="form-control" type="text" name="pob" placeholder="Place of Birth" onchange="myFunction()">
+          <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+              <label>Home Address</label> 
+              <textarea id="homeaddress" class="form-control" name="homeaddress" rows="3" placeholder="Home Address" onchange="myFunction()"></textarea> 
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+              <label>Present/Boarding House Address</label> 
+              <textarea id="presentaddress" class="form-control" name="presentaddress" rows="3" placeholder="Present/Boarding House Address" onchange="myFunction()"></textarea> 
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="form-group">
+              <label>Contact Number </label> 
+              <input id="mycontact" class="form-control" type="text" name="contact" placeholder="Contact Number" onchange="myFunction()"> 
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
           <div class="sub-header text-center"> </div>
-          <!-- <h2 class="sub-header text-center">Admission List</h2> -->
           <div class=""> <!-- this section for container cover -->
             <br>
             <!-- <a class="default-btn " href="student-admission.php"> + Create New</a> -->

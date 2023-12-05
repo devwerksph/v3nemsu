@@ -29,7 +29,7 @@
                   <div class="panel-heading">
                     <i class="bi bi-people pull-left"></i><h3 class="panel-title text-center">Total Enrolled Students <a href="#"> <span class="badge pull-right"><?php echo $overall; ?></span></a></h3>
                   </div>
-                  <div class="panel-body">
+                  <div style="height:250px;" class="panel-body">
                     <div class="table-responsive">
                       <table class="table table-bordered table-striped">
                       <tr>
@@ -74,7 +74,7 @@
                   <div class="panel-heading">
                     <i class="bi bi-pen pull-left"></i><h3 class="panel-title text-center"> Total Examinees <a href="#"><span class="badge pull-right"><?php echo $overall_Examinee; ?></span></a></h3>
                   </div>
-                  <div class="panel-body">
+                  <div style="height:250px;" class="panel-body">
                     <div class="table-responsive">
                       <table class="table table-bordered table-striped">
                       <tr>
@@ -109,7 +109,7 @@
                   <div class="panel-heading">
                     <i class="bi bi-journal-text pull-left"></i><h3 class="panel-title text-center">Summary Of Enrollment</h3>
                   </div>
-                  <div class="panel-body">
+                  <div style="height:305px;" class="panel-body">
                     <p>Regular Students Enrolled <a href="#"><span class="badge pull-right">99+</span></a></p>
                     <p>Incoming Transferees <a href="#"><span class="badge pull-right">99+</span></a></p>
                     <p>Outgoing Transferees  <a href="#"><span class="badge pull-right">99+</span></a></p>

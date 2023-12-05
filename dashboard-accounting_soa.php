@@ -15,9 +15,9 @@
           <span>Student Statement of Accounts <i class="bi bi-arrow-right"></i> List of Payments</span>  <a class="default-btn pull-right " href="#"> </a>
           <div class="sub-header text-center"> </div>
           <!-- <h2 class="sub-header text-center">Admission List</h2> -->
-          <div class=""> <!-- this section for container cover -->
-            <br>
-            <!-- <a class="default-btn " href="student-admission.php"> + Create New</a> -->
+          <div id="print-content" class=""> <!-- this section for container cover -->
+         
+          <br>
            
             <br>
               <?php 
@@ -132,8 +132,18 @@
               </table>
             </div>
          </div>
+         <input class="btn btn-primary pull-right" type="button" onclick="printDiv('print-content')" value="Print SOA"/> 
       </div>
-   
+      <script type="text/javascript">
+    function printDiv(divName) {
+        var printContents = document.getElementById(divName).innerHTML;
+        w=window.open();
+        w.document.write(printContents);
+        w.print();
+        w.close();
+    }
+</script>
+
       <?php include 'footer.php'; ?>
   </body>
 </html>

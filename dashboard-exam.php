@@ -12,7 +12,7 @@
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <br>
-          <span>Exam Result <i class="bi bi-arrow-right"></i> List of Student</span>  <a class="default-btn pull-right " href="exam-result.php"> + File Record</a>
+          <span>Exam Result <i class="bi bi-arrow-right"></i> List of Student</span>  <a class="default-btn pull-right text-strong" href="exam-result.php"> + File Record</a>
           <div class="sub-header text-center"> </div>
           <!-- <h2 class="sub-header text-center">Admission List</h2> -->
           <div class=""> <!-- this section for container cover -->

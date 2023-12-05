@@ -507,3 +507,6 @@ ul ul a {
   border-radius: 20px;
   border: 3px solid white;
 }
+
+.text-strong {font-weight: 900;}
+.modal-header .close {margin-top: -24px;}

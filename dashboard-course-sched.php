@@ -12,7 +12,7 @@
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <br>
-          <span>Enrollees List <i class="bi bi-arrow-right"></i> List of Student</span>  <a class="default-btn pull-right " href="course-scheduling.php"> + File Record</a>
+          <span>Enrollees List <i class="bi bi-arrow-right"></i> List of Student</span>  <a class="default-btn pull-right text-strong" href="course-scheduling.php"> + File Record</a>
           <div class="sub-header text-center"> </div>
           <!-- <h2 class="sub-header text-center">Admission List</h2> -->
           <div class=""> <!-- this section for container cover -->
@@ -64,9 +64,9 @@
                 <center>
                 <?php if ($row['upd']==0){
 
-                  echo '<a href="enrollment-fees.php?id='.$row['student_id'].'" class="btn-primary bi-margin" style="padding:5px;">Confirm <span class="bi bi-info-circle"></span> </a>';
+                  echo '<a style="font-size:10px;" href="enrollment-fees.php?id='.$row['student_id'].'" class="btn  btn-warning bi-margin" style="padding:5px;"><i class="bi bi-arrow-clockwise"></i> On Process</a>';
                   }else{
-                    echo '<a href="pre_enroll.php?action='.$row["status"].'&id='.$row["student_id"].'" class="btn-primary bi-margin" style="padding:5px;"><span class="bi bi-info-circle"></span> Confirm</a>';
+                    echo '<a style="font-size:10px;" href="pre_enroll.php?action='.$row["status"].'&id='.$row["student_id"].'" class="btn btn-success bi-margin" style="padding:5px;"><i class="bi bi-check-circle"></i> Confirmed</a>';
                   }
                  ?>
                   <a href="process/execute_del_pre_enroll.php?id=<?php echo $row['ctrlinc']; ?> " class='btn-danger ' style="padding:5px; "><span class="bi bi-trash-fill"></span> </a></center>
