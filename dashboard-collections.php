@@ -34,67 +34,38 @@
           </div>
           <div class="col-md-6">
               <div class="form-group">
-                  <label>Middle Name </label> 
-                  <input id="middlename" class="form-control " data-name="data-firstname" type="text" name="middlename" placeholder="Middle Name" onchange="myFunction()"> 
+                  <label>Last Name </label> 
+                  <input id="lastname" class="form-control " data-name="data-firstname" type="text" name="lastname" placeholder="Last Name" onchange="myFunction()"> 
+              </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+                <label>Date of Transaction </label> 
+                <input id="dateofbirth" class="form-control" type="date" name="dob" placeholder="Date of Birth" onchange="myFunction()">
+            </div>
+         </div>
+
+         <div class="col-md-6">
+              <div class="form-group">
+                  <label>Amount </label> 
+                  <input id="amount" class="form-control" type="text" name="amount" placeholder="Amount" onchange="myFunction()"> 
               </div>
           </div>
         
           <div class="col-md-6">
               <div class="form-group">
-                  <label>Last Name </label> 
-                  <input id="lastname" required="required" class="form-control" type="text" name="lastname" placeholder="Last Name" onchange="myFunction()"> 
+                  <label>Remarks </label> 
+                  <input id="remarks" required="required" class="form-control" type="text" name="remarks" placeholder="Remarks" onchange="myFunction()"> 
               </div>
           </div>
           
-          <div class="col-md-6">
-              <div class="form-group">
-                  <label>Suffix </label> 
-                  <input id="suffix" class="form-control" type="text" name="suffix" placeholder="Suffix" onchange="myFunction()"> 
-              </div>
-          </div>
-          <div class="col-md-12">
-            <div class="form-group">
-                <label>Course </label> 
-                <input id="YourCourse" class="form-control" type="text" name="course" placeholder="Course" onchange="myFunction()"> 
-            </div>
-          </div><br><br>
-          <div class="col-md-4">
-            <div class="form-group">
-                <label>Age </label> 
-                <input id="YourAge" class="form-control" type="number" name="age" placeholder="Age" onchange="myFunction()"> 
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="form-group">
-                <label>Date of Birth </label> 
-                <input id="dateofbirth" class="form-control" type="date" name="dob" placeholder="Date of Birth" onchange="myFunction()">
-            </div>
-         </div>
-        <div class="col-md-4">
+        <div class="col-md-6">
           <div class="form-group">
-              <label>Place of Birth </label> 
-              <input id="dateofplace" class="form-control" type="text" name="pob" placeholder="Place of Birth" onchange="myFunction()">
+              <label>OR # </label> 
+              <input id="ornumber" class="form-control" type="text" name="ornumber" placeholder="OR #" onchange="myFunction()">
           <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
         </div>
-        <div class="col-md-12">
-          <div class="form-group">
-              <label>Home Address</label> 
-              <textarea id="homeaddress" class="form-control" name="homeaddress" rows="3" placeholder="Home Address" onchange="myFunction()"></textarea> 
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="form-group">
-              <label>Present/Boarding House Address</label> 
-              <textarea id="presentaddress" class="form-control" name="presentaddress" rows="3" placeholder="Present/Boarding House Address" onchange="myFunction()"></textarea> 
-          </div>
-        </div>
-        <div class="col-md-12">
-          <div class="form-group">
-              <label>Contact Number </label> 
-              <input id="mycontact" class="form-control" type="text" name="contact" placeholder="Contact Number" onchange="myFunction()"> 
-          </div>
-        </div>
-
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
