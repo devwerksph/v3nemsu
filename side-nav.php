@@ -15,15 +15,15 @@ $first_part = basename($_SERVER['PHP_SELF'], ".php");
         <a href="index.php"><i class="bi bi-house bi-margin"></i>Overview</a>
       </li>
       <li>
-     <li  class="<?php if ($first_part=="reports") {echo "active"; } else  {echo "noactive";}?>"><a data-parent="#sidecollapse" href="#pageSubmenuAdmission" data-toggle="collapse" aria-expanded="false" aria-controls="pageSubmenuAdmission"><i class="bi bi-person-plus bi-margin"></i>Admission</a></li>
-           <ul style="font-weight:400;" class="collapse list-unstyled" id="pageSubmenuAdmission">
+     <li  class="<?php if ($first_part=="admission") {echo "active"; } else  {echo "noactive";}?>"><a data-parent="#sidecollapse" href="#pageSubmenuAdmission" data-toggle="collapse" aria-expanded="false" aria-controls="pageSubmenuAdmission"><i class="bi bi-person-plus bi-margin"></i>Admission</a></li>
+           <ul style="font-weight:400;" class="<?php if ($first_part == ("dashboard-admission" && "dashboard-course-sched")) {echo "list-unstyled collapse in"; } else  {echo "collapse list-unstyled";}?>" id="pageSubmenuAdmission">
              <li class="<?php if ($first_part=="dashboard-admission") {echo "active"; } else  {echo "noactive";}?>"><a id="dashboard-admission" href="dashboard-admission.php"><i class="bi bi-person-plus bi-margin"></i>Pre Admission</a></li>
             <li class="<?php if ($first_part=="dashboard-course-sched") {echo "active"; } else  {echo "noactive";}?>"><a href="dashboard-course-sched.php"><i class="bi bi-person-plus bi-margin"></i>Enrollees List</a></li>
            
           </ul>
 
           <li  class="<?php if ($first_part=="reports") {echo "active"; } else  {echo "noactive";}?>"><a data-parent="#sidecollapse" href="#pageSubmenuRegistrar" data-toggle="collapse" aria-expanded="false" aria-controls="pageSubmenuRegistrar"><i class="bi bi-file-earmark-ruled bi-margin"></i></i>Registrar</a></li>
-           <ul style="font-weight:400;" class="collapse list-unstyled" id="pageSubmenuRegistrar">
+           <ul style="font-weight:400;" class="<?php if ($first_part=="") {echo "list-unstyled collapse in"; } else  {echo "collapse list-unstyled";}?>" id="pageSubmenuRegistrar">
            <li class="<?php if ($first_part=="dashboard-exam") {echo "active"; } else  {echo "noactive";}?>"><a href="dashboard-exam.php"><i class="bi bi-file-earmark-text bi-margin"></i></span>Encode Exam Result</a></li>
             <li class="<?php if ($first_part=="dashboard-subject-encode") {echo "active"; } else  {echo "noactive";}?>"><a href="dashboard-subject-encode.php"><i class="bi bi-journal-plus bi-margin"></i>Subject Encoding</a></li>
             <li class="<?php if ($first_part=="dashboard-miscellaneous") {echo "active"; } else  {echo "noactive";}?>"><a href="dashboard-miscellaneous.php"><i class="bi bi-gear-wide-connected bi-margin"></i>Miscellaneous</a></li>
