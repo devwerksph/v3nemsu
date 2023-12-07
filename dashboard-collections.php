@@ -51,16 +51,19 @@
     <div class="panel-body">
       <div class="tab-content table-responsive">
         <div role="tabpanel" class="tab-pane fade in active" id="one">
-          <form >
-          <div class="col-md-12">
-          <div class="form-group">
-              <label>Payee</label>
-              
-              <select id="childtwogender" class="form-control" type="text" name="childgender[]" onchange="gender2(this);">
-                <option disabled selected>-Select-</option>
-                <option value="John Doe">John Doe</option>
-                <option value="Jane Doe">Jane Doe</option>
-              </select>
+          <form method="post" action="#">
+          <div class="col-md-12"><br/>
+          <div class="form-group has-feedback has-search">
+            <label>Payee</label>
+            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            <input type="text" class="form-control" list="payee-name" placeholder="Search Payee">
+            <datalist id="payee-name">
+                <option value="Jane Doe">
+                <option value="John Doe">
+                <option value="Juan Dela Cruz">
+                <option value="Jane Dela Cruz">
+                <option value="Dodong Janjan">
+              </datalist>  
           </div>
           </div>
 
@@ -90,21 +93,27 @@
                   <input id="remarks" required="required" class="form-control" type="text" name="remarks" placeholder="OR #" onchange="myFunction()"> 
               </div>
           </div>
+          <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Confirm</button>
+      </div>
           </form>  
         </div>
         <div role="tabpanel" class="tab-pane fade" id="two">
-        <form >
-          <div class="col-md-12">
-          <div class="form-group">
-              <label>Payee</label>
-              
-              <select id="childtwogender" class="form-control" type="text" name="childgender[]" onchange="gender2(this);">
-                <option disabled selected>-Select-</option>
-                <option value="John Doe">John Doe</option>
-                <option value="Jane Doe">Jane Doe</option>
-              </select>
+        <form method="post" action="#">
+          <div class="col-md-12"><br/>
+          <div class="form-group has-feedback has-search">
+            <label>Payee</label>
+            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+            <input type="text" class="form-control" list="payee-name" placeholder="Search Payee">
+            <datalist id="payee-name">
+                <option value="Jane Doe">
+                <option value="John Doe">
+                <option value="Juan Dela Cruz">
+                <option value="Jane Dela Cruz">
+                <option value="Dodong Janjan">
+              </datalist>  
           </div>
-              
           </div>
 
           <div class="col-md-6">
@@ -132,20 +141,20 @@
                   <label>OR # </label> 
                   <input id="remarks" required="required" class="form-control" type="text" name="remarks" placeholder="OR #" onchange="myFunction()"> 
               </div>
+              
           </div>
+          <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Confirm</button>
+      </div>
           </form> 
           </div>
           <div role="tabpanel" class="tab-pane fade" id="three">
-          <form >
-          <div class="col-md-12">
+         <form method="post" action="#">
+          <div class="col-md-12"><br/>
           <div class="form-group">
               <label>Payee</label>
-              
-              <select id="childtwogender" class="form-control" type="text" name="childgender[]" onchange="gender2(this);">
-                <option disabled selected>-Select-</option>
-                <option value="John Doe">John Doe</option>
-                <option value="Jane Doe">Jane Doe</option>
-              </select>
+              <input id="payee" required="required" class="form-control" type="text" name="payee" placeholder="Payee" onchange="myFunction()"> 
           </div>
               
           </div>
@@ -176,6 +185,10 @@
                   <input id="remarks" required="required" class="form-control" type="text" name="remarks" placeholder="OR #" onchange="myFunction()"> 
               </div>
           </div>
+          <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Confirm</button>
+      </div>
           </form> 
         
           </div>
@@ -186,10 +199,7 @@
       <!-- End Modal-->
 
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary">Save changes</button>
-      </div>
+
     </div>
   </div>
 </div>
