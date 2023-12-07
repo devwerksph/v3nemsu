@@ -1,6 +1,12 @@
 <?php include 'process/execute_auth_.php'; ?>
 <?php include 'header.php'; ?> <!-- Header Initialize Links -->
 
+<style>
+    .before::before {
+   content: none !important;
+}
+</style>
+
   <body>
 
     <?php include 'head.php'; ?><!-- Head Nav -->
@@ -14,8 +20,8 @@
           <br>
           <span>Accounting <i class="bi bi-arrow-right"></i> List of Collections</span>  <a data-toggle="modal" data-target="#createTransaction" class="default-btn pull-right text-strong" href="">+ Create Transaction</a>
           <!-- Modal -->
-<div class="modal fade" id="createTransaction" tabindex="-1" role="dialog" aria-labelledby="createTransactionLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+<div class="modal fade " id="createTransaction" tabindex="-1" role="dialog" aria-labelledby="createTransactionLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title" id="createTransactionLabel">Create Transaction</h4>
@@ -25,18 +31,37 @@
       </div>
       <div class="modal-body">
       <div class="row">
-          <div class="col-md-6">
-              <div class="form-group">
-                  <label>First Name </label> 
-                  <input id="firstname" required="required" class="form-control user_change" data-name="data-firstname" type="text" name="firstname" placeholder="First Name" onchange="myFunction()"> 
-              <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+      <!--Modal-->
+      <div class="col-md-12">
+        
+  <div class="panel panel-default">
+    <div class="panel-heading panel-heading-nav">
+      <ul class="nav nav-tabs">
+        <li role="presentation" class="active">
+          <a class="before" href="#one" role="tab" data-toggle="tab">Student</a>
+        </li>
+        <li role="presentation">
+          <a class="before" href="#two"  role="tab" data-toggle="tab">Employee</a>
+        </li>
+        <li role="presentation">
+          <a class="before" href="#three"  role="tab" data-toggle="tab">Others</a>
+        </li>
+      </ul>
+    </div>
+    <div class="panel-body">
+      <div class="tab-content table-responsive">
+        <div role="tabpanel" class="tab-pane fade in active" id="one">
+          <form >
+          <div class="col-md-12">
+          <div class="form-group">
+              <label>Payee</label>
               
+              <select id="childtwogender" class="form-control" type="text" name="childgender[]" onchange="gender2(this);">
+                <option disabled selected>-Select-</option>
+                <option value="John Doe">John Doe</option>
+                <option value="Jane Doe">Jane Doe</option>
+              </select>
           </div>
-          <div class="col-md-6">
-              <div class="form-group">
-                  <label>Last Name </label> 
-                  <input id="lastname" class="form-control " data-name="data-firstname" type="text" name="lastname" placeholder="Last Name" onchange="myFunction()"> 
-              </div>
           </div>
 
           <div class="col-md-6">
@@ -59,17 +84,111 @@
                   <input id="remarks" required="required" class="form-control" type="text" name="remarks" placeholder="Remarks" onchange="myFunction()"> 
               </div>
           </div>
-          
-        <div class="col-md-6">
-          <div class="form-group">
-              <label>OR # </label> 
-              <input id="ornumber" class="form-control" type="text" name="ornumber" placeholder="OR #" onchange="myFunction()">
-          <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>OR # </label> 
+                  <input id="remarks" required="required" class="form-control" type="text" name="remarks" placeholder="OR #" onchange="myFunction()"> 
+              </div>
+          </div>
+          </form>  
         </div>
+        <div role="tabpanel" class="tab-pane fade" id="two">
+        <form >
+          <div class="col-md-12">
+          <div class="form-group">
+              <label>Payee</label>
+              
+              <select id="childtwogender" class="form-control" type="text" name="childgender[]" onchange="gender2(this);">
+                <option disabled selected>-Select-</option>
+                <option value="John Doe">John Doe</option>
+                <option value="Jane Doe">Jane Doe</option>
+              </select>
+          </div>
+              
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+                <label>Date of Transaction </label> 
+                <input id="dateofbirth" class="form-control" type="date" name="dob" placeholder="Date of Birth" onchange="myFunction()">
+            </div>
+         </div>
+
+         <div class="col-md-6">
+              <div class="form-group">
+                  <label>Amount </label> 
+                  <input id="amount" class="form-control" type="text" name="amount" placeholder="Amount" onchange="myFunction()"> 
+              </div>
+          </div>
+        
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>Remarks </label> 
+                  <input id="remarks" required="required" class="form-control" type="text" name="remarks" placeholder="Remarks" onchange="myFunction()"> 
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>OR # </label> 
+                  <input id="remarks" required="required" class="form-control" type="text" name="remarks" placeholder="OR #" onchange="myFunction()"> 
+              </div>
+          </div>
+          </form> 
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="three">
+          <form >
+          <div class="col-md-12">
+          <div class="form-group">
+              <label>Payee</label>
+              
+              <select id="childtwogender" class="form-control" type="text" name="childgender[]" onchange="gender2(this);">
+                <option disabled selected>-Select-</option>
+                <option value="John Doe">John Doe</option>
+                <option value="Jane Doe">Jane Doe</option>
+              </select>
+          </div>
+              
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+                <label>Date of Transaction </label> 
+                <input id="dateofbirth" class="form-control" type="date" name="dob" placeholder="Date of Birth" onchange="myFunction()">
+            </div>
+         </div>
+
+         <div class="col-md-6">
+              <div class="form-group">
+                  <label>Amount </label> 
+                  <input id="amount" class="form-control" type="text" name="amount" placeholder="Amount" onchange="myFunction()"> 
+              </div>
+          </div>
+        
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>Remarks </label> 
+                  <input id="remarks" required="required" class="form-control" type="text" name="remarks" placeholder="Remarks" onchange="myFunction()"> 
+              </div>
+          </div>
+          <div class="col-md-6">
+              <div class="form-group">
+                  <label>OR # </label> 
+                  <input id="remarks" required="required" class="form-control" type="text" name="remarks" placeholder="OR #" onchange="myFunction()"> 
+              </div>
+          </div>
+          </form> 
+        
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <!-- End Modal-->
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
