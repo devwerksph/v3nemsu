@@ -47,7 +47,7 @@ if(isset($_GET['id'])){
     <div class="panel-heading panel-heading-nav">
       <ul class="nav nav-tabs">
         <li role="presentation" class="active">
-          <a class="before" href="#one" role="tab" data-toggle="tab">Evaluation</a>
+          <a class="before" href="#one" role="tab" data-toggle="tab">Evaluations</a>
         </li>
         <li role="presentation">
           <a class="before" href="#two"  role="tab" data-toggle="tab">Subjects To Enroll</a>
@@ -118,8 +118,73 @@ if(isset($_GET['id'])){
               </tr>  
 
                       <?php  $i++;}  ?>  
+
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> <a data-toggle="modal" data-target="#evaluateGrades" href="" class=" btn btn-primary "  style="padding:5px ">Evaluate </span></a></td>
+              </tr>
             </tbody>
           </table>
+            <!-- Add Grades Modal -->
+            <div class="modal fade" id="evaluateGrades" tabindex="-1" role="dialog" aria-labelledby="addGradesLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="addGradesLabel">Evaluate Student Grades</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label>Unit </label> 
+                              <input id="unit" required="required" class="form-control user_change" data-name="data-firstname" type="text" name="unit" placeholder="Unit" onchange="myFunction()"> 
+                          <div data-lastpass-icon-root="true" style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"></div></div>
+                          
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label>Course </label> 
+                              <input id="prelim" class="form-control " data-name="data-firstname" type="text" name="course" placeholder="Course" onchange="myFunction()"> 
+                          </div>
+                      </div>
+                    
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label>Year Level </label> 
+                              <input id="midterm" required="required" class="form-control" type="text" name="yrlevel" placeholder="Year Level" onchange="myFunction()"> 
+                          </div>
+                      </div>
+                      
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <label>Pre-requisite </label> 
+                              <input id="finals" class="form-control" type="text" name="prereq" placeholder="Pre-requisite" onchange="myFunction()"> 
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Semester </label> 
+                            <input id="semester" class="form-control" type="text" name="semester" placeholder="Semester" onchange="myFunction()"> 
+                        </div>
+                      </div><br><br>
+                      
+                </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div><!--End Modal-->
         </div>
         <div role="tabpanel" class="tab-pane fade" id="two">
         <table class="table table-bordered table-striped">

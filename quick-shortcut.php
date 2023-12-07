@@ -12,7 +12,7 @@
        <!-- <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">-->
         <div class="col-md-12">
 
-          <h2 class="sub-header text-center">Quick Shortcut</h2>
+          <h2 class="sub-header text-center">University Management System</h2>
           <div class="container">
             <br/>
 
@@ -96,7 +96,7 @@
 	                    
 	                   <div class="col-md-12"><hr></div>
 	                   
-	                   <div class="col-xs-12 col-sm-9">
+	                   <!--<div class="col-xs-12 col-sm-9">
 	                       <div class="panel panel-success">
 	                           <div class="panel-heading">
 	                               Message 
@@ -106,9 +106,9 @@
 	                               <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 	                           </div>
 	                       </div>
-	                   </div>
+	                   </div>-->
 	                   
-	                   <div class="col-xs-12 col-sm-3">
+	                   <!--<div class="col-xs-12 col-sm-3">
 	                       <div class="panel panel-default">
 	                           <div class="panel-heading">
 	                               Something
@@ -126,7 +126,7 @@
 	                               
 	                           </div>
 	                       </div>
-	                   </div>
+	                   </div>-->
 	                   
 	               </div>
 	               
