@@ -169,12 +169,7 @@ if(isset($_GET['id'])){
                               <input id="finals" class="form-control" type="text" name="prereq" placeholder="Pre-requisite" onchange="myFunction()"> 
                           </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                            <label>Semester </label> 
-                            <input id="semester" class="form-control" type="text" name="semester" placeholder="Semester" onchange="myFunction()"> 
-                        </div>
-                      </div><br><br>
+<br><br>
                       
                 </div>
                   <div class="modal-footer">
